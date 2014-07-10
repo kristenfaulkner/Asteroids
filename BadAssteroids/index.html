@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style type="text/css" media="all">
+          canvas{
+            border: 1px solid black;
+          }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src = "moving_object.js"></script>
+        <script src = "asteroid.js"></script>
+        <script src = "game.js"></script>
+        <script>
+            var ctx = document.getElementsByTagName("canvas")[0];
+            new Asteroids.Game(ctx, 5).start();
+            
+        </script>
+    </body>
+</html>
